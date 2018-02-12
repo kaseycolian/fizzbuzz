@@ -18,7 +18,7 @@ public class FizzBuzzTest {
 		String response = underTest.say(1);
 		
 		//assert
-		Assert.assertEquals("1 gets you no fizzbuzz, sorry!");
+		Assert.assertEquals(1);
 		
 		
 	}

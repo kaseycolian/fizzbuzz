@@ -2,26 +2,24 @@ package fizzbuzz;
 
 public class FizzBuzz {
 
-	// public String say(int number) { // say is the method that brings the output
-	// back; this is a public String because we're returning something.
-	// if (isFizz(number) && number % 5 == 0) {
-	// return "fizzbuzz";
-	// }
-	// if (isFizz(number)) {
-	// return "fizz"; // return stops the execution, whereas printline won't halt
-	// the execution.
-	// // Return something from a method, you are returning that value back to where
-	// it
-	// // was called from. It will no longer execute any code in that method. You
-	// done.
-	// }
-	// if (number % 5 == 0) {
-	// return "buzz";
-	// }
-	//
-	// return number + " gets you no fizzbuzz, sorry!";
-	//
-	// }
+	public String say(int number) { // say is the method that brings the output
+		// back; this is a public String because we're returning something.
+		if (isFizz(number) && number % 5 == 0) {
+			return "fizzbuzz";
+		}
+		if (isFizz(number)) {
+			return "fizz"; // return stops the execution, whereas printline won't halt
+			// the execution.
+			// Return something from a method, you are returning that value back to where it
+			// was called from. It will no longer execute any code in that method. You done.
+		}
+		if (number % 5 == 0) {
+			return "buzz";
+		}
+
+		return number
+
+	}
 
 	public String loopTo100() { // has to be a public void, void because we're printing out and not returning
 								// anything. If it doesn't have a return in it, it has to be a void.
@@ -45,7 +43,7 @@ public class FizzBuzz {
 				System.out.println(i + " gets you no fizzbuzz, sorry!");
 			}
 		}
-		return "fizzCount: "+ fizzCount + " buzzCount: " + buzzCount;
+		return "fizzCount: " + fizzCount + " buzzCount: " + buzzCount;
 
 	}
 
