@@ -2,23 +2,22 @@ package fizzbuzz;
 
 public class FizzBuzz {
 
-	public String say(int number) { // say is the method that brings the output
-		// back; this is a public String because we're returning something.
+	public String say(int number) { 
 		if (isFizz(number) && number % 5 == 0) {
 			return "fizzbuzz";
 		}
-		if (isFizz(number)) {
-			return "fizz"; // return stops the execution, whereas printline won't halt
-			// the execution.
-			// Return something from a method, you are returning that value back to where it
-			// was called from. It will no longer execute any code in that method. You done.
+		if (isFizz(number) && number % 3==0) {
+			return "fizz"; 
 		}
 		if (number % 5 == 0) {
 			return "buzz";
 		}
 
-		return number
+		return "Say" + number;
 
+	}
+	private boolean isFizz(int n) {
+		return n % 3 == 0;
 	}
 
 	public String loopTo100() { // has to be a public void, void because we're printing out and not returning
@@ -47,7 +46,4 @@ public class FizzBuzz {
 
 	}
 
-	private boolean isFizz(int n) {
-		return n % 3 == 0;
-	}
 }
